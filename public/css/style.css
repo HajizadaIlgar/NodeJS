@@ -1,0 +1,64 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.greating-text h1 {
+    text-align: center;
+    color: #fff;
+    font: 700 2.5em 'Roboto', sans-serif;
+    background: linear-gradient(to right, #cb21ff, #0d7b9c4b);
+    padding: 10px;
+}
+
+.greating-text h3 {
+    color: #fff;
+    font: 700 1.5em 'Roboto', sans-serif;
+    background: linear-gradient(to left, #cb21ff, #0d7b9c4b);
+    margin: 20px 0 20px 0;
+    padding: 10px;
+}
+
+.form-group{
+    background: radial-gradient(circle, rgba(192, 24, 142, 0.5) 0%, rgba(195, 0, 255, 0.315) 100%);
+    font: 600 14px arial;
+    width: 100%;
+    padding: 50px;
+}
+#sectionSelect {
+    margin:40px 0 40px 0;
+}
+label[for="imageUrl"],label[for="sectionSelect"] {
+    background: #fff;
+    color: #000;
+    font: 600 24px arial;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+label[for="sectionSelect"]{
+    cursor: default;
+}
+.generatedPromt{
+    width: 100%;
+    background-color: blueviolet;
+    border-radius: 15px;
+    padding: 10px;
+    height: 200px;
+    width: 100%;
+    margin: 0 0 20px 0;
+    color: #fff;
+}
+
+#generatePromt{
+    background:linear-gradient(to right, #dc6aff, #61daff4b);
+    color: #000;
+    font: 600 24px arial;
+    padding: 10px;
+    width: 100%;
+    border-radius: 15px;
+    cursor: pointer;
+}
+input[type="file"]::file-selector-button{ /* the button to select file */
+    display: none;
+}
