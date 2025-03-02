@@ -11,34 +11,83 @@
 
 <body>
     <div class="container">
-        <div class="greating-text">
-            <h1>AI Garderobe Maker</h1>
-            <h3>Upload your cloth's image and get the best combination for your outfit</h3>
+        <div class="nav">
+            <div class="logo">AI Wardrobe</div>
+            <div class="menu">
+                <a href="#" class="nav_link">Create Wardrobe</a>
+                <a href="#" class="nav_link">Make Combine</a>
+                <a href="#" class="nav_link">Profile</a>
+            </div>
         </div>
     </div>
+
     <div class="container">
-        <form id="visionForm">
-            <div class="form-group">
-                <label for="imageUrl">Upload Your Cloth's Image URL</label>
-                <input type="text" id="imageUrl" name="imageUrl" />
-                <div id="sectionSelect" name="sectionSelect">
-                    <label for="sectionSelect">Choose Section:</label>
-                    <input type="radio" value="red" name="clothColor"/>Red
-                    <input type="radio" value="black" name="clothColor"/>Black
-                    <input type="radio" value="green" name="clothColor"/>Green
-                    <input type="radio" value="blue" name="clothColor"/>Blue
+        <div class="main_content">
+            <h1 class="main_title">AI Garderobe Maker</h1>
+            <p>Upload your clothing image and get the best combination for your outfit</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <form id="visionForm" class="form">
+            <div class="formInput">
+                <label for="imageUrl">Image URL</label>
+                <input type="text" id="imageUrl" name="imageUrl" placeholder="Enter image URL or upload file">
+            </div>
+
+            <fieldset class="color-select">
+                <legend class="color-legend">Select Primary Color</legend>
+                <div class="color-grid">
+                    <label class="color-item">
+                        <input type="radio" value="red" name="clothColor" class="color-input">
+                        <span class="color-dot red"></span>
+                        <span class="color-label">Red</span>
+                    </label>
+                    <label class="color-item">
+                        <input type="radio" value="black" name="clothColor" class="color-input">
+                        <span class="color-dot black"></span>
+                        <span class="color-label">Black</span>
+                    </label>
+                    <label class="color-item">
+                        <input type="radio" value="green" name="clothColor" class="color-input">
+                        <span class="color-dot green"></span>
+                        <span class="color-label">Green</span>
+                    </label>
+                    <label class="color-item">
+                        <input type="radio" value="blue" name="clothColor" class="color-input">
+                        <span class="color-dot blue"></span>
+                        <span class="color-label">Blue</span>
+                    </label>
+                    <label class="color-item">
+                        <input type="radio" value="purple" name="clothColor" class="color-input">
+                        <span class="color-dot purple"></span>
+                        <span class="color-label">Purple</span>
+                    </label>
+                    <label class="color-item">
+                        <input type="radio" value="yellow" name="clothColor" class="color-input">
+                        <span class="color-dot yellow"></span>
+                        <span class="color-label">Yellow</span>
+                    </label>
                 </div>
-                <div class="generatedPromt" id="prompt">
-                    <h3 id="generatedPrompt">Ilqar Gotuve Wp girsun</h3>
-                </div>
-                <div class="generatedPromt" id="aiResponse">
-                    
+            </fieldset>
+
+            <div class="output-card">
+                <h3>Generated Combination</h3>
+                <div id="aiResponse">
+                    Your AI-generated outfit combination will appear here
                 </div>
             </div>
-            <button type="submit" id="generatePrompt">Generate</button>
+            <button type="submit" id="generatePrompt">Generate Outfit</button>
         </form>
     </div>
-    <script src="js/app.js"></script>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">© 2023 AI Wardrobe Maker. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js\app.js"></script>
 </body>
 
 </html>

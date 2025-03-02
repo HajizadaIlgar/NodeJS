@@ -105,10 +105,9 @@ section {
 }
 
 body {
-	font-family: 'Roboto', sans-serif;
-	line-height: 1.6;
-    background-color: rgba(43, 55, 226, 0.356);
-	padding: 20px;
+	background-color: #0f0f0f;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
 }
 
 ol,

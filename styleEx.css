@@ -1,0 +1,78 @@
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav:first-child{
+    font: 800 20px Arial;
+    background: linear-gradient(135deg, #cb21ff 0%, #0d7b9c 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.menu{
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    font: 400 12px Arial;
+}
+.menu a{
+    background-clip: text;
+    color: #000;
+}
+
+.greating-text h3 {
+    color: #fff;
+    font: 700 1.5em 'Roboto', sans-serif;
+    background: linear-gradient(to left, #cb21ff, #0d7b9c4b);
+    margin: 20px 0 20px 0;
+    padding: 10px;
+}
+
+.form-group{
+    background: radial-gradient(circle, rgba(192, 24, 142, 0.5) 0%, rgba(195, 0, 255, 0.315) 100%);
+    font: 600 14px arial;
+    width: 100%;
+    padding: 50px;
+}
+#sectionSelect {
+    margin:40px 0 40px 0;
+}
+label[for="imageUrl"],label[for="sectionSelect"] {
+    background: #fff;
+    color: #000;
+    font: 600 24px arial;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+label[for="sectionSelect"]{
+    cursor: default;
+}
+.generatedPromt{
+    width: 100%;
+    background-color: blueviolet;
+    border-radius: 15px;
+    padding: 10px;
+    height: 200px;
+    width: 100%;
+    margin: 0 0 20px 0;
+    color: #fff;
+}
+
+#generatePromt{
+    background:linear-gradient(to right, #dc6aff, #61daff4b);
+    color: #000;
+    font: 600 24px arial;
+    padding: 10px;
+    width: 100%;
+    border-radius: 15px;
+    cursor: pointer;
+}
+input[type="file"]::file-selector-button{ /* the button to select file */
+    display: none;
+}
