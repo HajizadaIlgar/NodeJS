@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AiCombineMaker</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styleWarderobe.css">
+    <link rel=" stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="logo">AI Wardrobe</div>
+            <div class="menu">
+                <a href="warderobe.html" class="nav_link">Create Wardrobe</a>
+                <a href="index.html" class="nav_link">Make Combine</a>
+                <a href="#" class="nav_link">Profile</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <form id="garderobeForm" class="form">
+            <div class="cloth-upload">
+                <label for="imageUrl">Add Your Clothes To Create Your Virtual Garderobe</label>
+                <input type="text" id="imageUrl" name="imageUrl" placeholder="Enter image URL or upload file"/>
+            </div>
+
+            <fieldset class="type-select">
+                <legend class="type-legend">Select Your Cloth Type</legend>
+                <div class="type-grid">
+                    <label class="type-item">
+                        <input type="radio" value="top" name="clothType" class="type-input"/>
+                        <span class="cloth-icon"><i class="fa-solid fa-shirt"></i></span>
+                        <span class="color-label">Top</span>
+                    </label>
+                    <label class="type-item">
+                        <input type="radio" value="bottom" name="clothType" class="type-input"/>
+                        <span class="cloth-icon"><i class="fa-solid fa-user-tie"></i></span>
+                        <span class="color-label">Bottom</span>
+                    </label>
+                    <label class="type-item">
+                        <input type="radio" value="shoe" name="clothType" class="type-input"/>
+                        <span class="cloth-icon"><i class="fa-solid fa-shoe-prints"></i></span>
+                        <span class="color-label">Shoe</span>
+                    </label>
+                </div>
+            </fieldset>
+
+            <button type="submit" id="generatePrompt">Generate Outfit</button>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">© 2025 AI Wardrobe Maker. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js\app.js"></script>
+</body>
+
+</html>

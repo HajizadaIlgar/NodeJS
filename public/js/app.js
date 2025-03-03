@@ -17,7 +17,6 @@ document.querySelectorAll('input[name="clothColor"]').forEach(radio => {
 
 generatePrompt.addEventListener('click', () => {
     generatePromt();
-    generatedPrompt.innerHTML = postingPrompt;
 });
 
 document
