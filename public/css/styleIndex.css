@@ -43,7 +43,10 @@
     color: #cb21ff;
 }
 
-
+img{
+    width:500px;
+    height:500px;
+}
 
 .main_content h1 {
     font-size: 2.5rem;
@@ -70,7 +73,7 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-#file {
+#file,#pron {
     width: 80%;
     padding: 1rem;
     background: rgba(255, 255, 255, 0.1);
@@ -82,7 +85,7 @@
     transition: all 0.3s ease;
 }
 
-#file:focus {
+#file,#pron:focus {
     outline: none;
     border-color: #cb21ff;
     box-shadow: 0 0 0 3px rgba(203, 33, 255, 0.2);
@@ -187,7 +190,7 @@
     border-radius: 8px;
 }
 
-#generatePrompt {
+#generatePrompt,#bas {
     width: 100%;
     padding: 1rem;
     background: var(--primary-gradient);
