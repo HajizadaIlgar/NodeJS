@@ -17,6 +17,7 @@ document.querySelectorAll('input[name="clothColor"]').forEach(radio => {
 
 generatePrompt.addEventListener('click', () => {
     generatePromt();
+    generatedPrompt.innerHTML = postingPrompt;
 });
 
 document
@@ -25,9 +26,16 @@ document
           event.preventDefault(); // Prevent the form from reloading the page
 
           const promptText =postingPrompt;
-          const imageUrl = document.getElementById("imageUrl").value;
-
-          const url = "https://chatgpt-vision1.p.rapidapi.com/matagvision2";
+          const fileInput = document.getElementById("file");
+          const file = fileInput.files[0];
+          if (!file) {
+            alert("Please select a file!");
+            return;
+          }
+      
+          const formData = new FormData();
+          formData.append("image", file);
+  
           const options = {
             method: "POST",
             headers: {
@@ -42,7 +50,7 @@ document
                   role: "user",
                   content: [
                     { type: "text", text: promptText },
-                    { type: "image", url: imageUrl },
+                    { type: "image",formData },
                   ],
                 },
               ],
